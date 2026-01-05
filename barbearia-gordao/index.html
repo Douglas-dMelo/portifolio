@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Barbearia Gordão</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <h1>BARBEARIA GORDÃO</h1>
+  <p>Estilo • Qualidade • Atitude</p>
+  <a href="https://wa.me/5511910530628" class="btn-whats" target="_blank">
+    WhatsApp
+  </a>
+</header>
+
+<section class="info">
+  <div>📍 Rua Andorinha Pequena, nº 323</div>
+  <div>⏰ Seg–Sáb • 16h às 21h</div>
+  <div>📞 (11) 91053-0628</div>
+</section>
+
+<section class="servicos">
+<h2>💈 Serviços</h2>
+<div class="cards">
+  <div>Corte <span>R$35</span></div>
+  <div>Barba <span>R$25</span></div>
+  <div>Corte + Barba <span>R$60</span></div>
+  <div>Sobrancelha <span>R$10</span></div>
+  <div>Corte + Barba + Sobrancelha <span>R$70</span></div>
+  <div>Luzes + Corte <span>R$100</span></div>
+</div>
+</section>
+
+<section class="agendamento">
+<h2>📅 Agendar horário</h2>
+
+<form id="formAgendamento">
+  <input id="nome" placeholder="Seu nome" required>
+  <select id="servico" required>
+    <option value="">Serviço</option>
+    <option>Corte</option>
+    <option>Barba</option>
+    <option>Corte + Barba</option>
+    <option>Sobrancelha</option>
+    <option>Corte + Barba + Sobrancelha</option>
+    <option>Luzes + Corte</option>
+  </select>
+
+<input type="date" id="data" required>
+<select id="hora" required>
+  <option value="">Selecione um horário</option>
+  <option value="16:00">16:00</option>
+  <option value="17:00">17:00</option>
+  <option value="18:00">18:00</option>
+  <option value="19:00">19:00</option>
+  <option value="20:00">20:00</option>
+  <option value="21:00">21:00</option>
+</select>
+
+  <button>Confirmar</button>
+</form>
+
+<p id="mensagem"></p>
+</section>
+
+<footer>
+©️ 2025 Barbearia Gordão
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

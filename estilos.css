@@ -1,0 +1,135 @@
+/* CSS Reset */ 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */ 
+header {
+    background: linear-gradient(160deg, #004aad, #f7931e);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* PSEUDO-CLASSE */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* SECTIONS */
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* ARTICLES */
+article {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* PSEUDO-ELEMENTO */
+article h3::before {
+    content: "📌 ";
+}
+
+/* LINKS */
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #004aad;
+    font-weight: bold;
+}
+
+article a:hover {
+    color: #f7931e;
+}
+
+/* ASIDE */
+aside {
+    background: #eee;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: #ccc;
+}
+
+footer a {
+    color: #f7931e;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* FOTO DE PERFIL */
+.perfil {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.perfil img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #f7931e;
+}
+
+.perfil figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+article ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+article ul li {
+    list-style: disc;
+    margin-bottom: 5px;
+}

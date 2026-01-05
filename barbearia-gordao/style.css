@@ -1,0 +1,291 @@
+:root {
+    --primary: #f1c40f;
+    --dark: #0f0f0f;
+    --dark-light: #1c1c1c;
+    --text: #ffffff;
+    --muted: #b3b3b3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #1a1a1a, #0f0f0f);
+    color: var(--text);
+}
+header {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(180deg, #000000, #111111);
+    border-bottom: 3px solid var(--primary);
+}
+
+header h1 {
+    color: var(--primary);
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 10px;
+    color: var(--muted);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.btn-whats {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 36px;
+    background: linear-gradient(135deg, #25D366, #1ebe5d);
+    color: #000;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-whats:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+}
+section{padding:40px;max-width:1000px;margin:auto}
+.info{display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.cards div {
+    background: linear-gradient(145deg, #1c1c1c, #151515);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cards div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.cards span {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* ============================= */
+/* RESPONSIVIDADE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .btn-whats {
+        width: 100%;
+        text-align: center;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 14px;
+    }
+}
+
+/* ============================= */
+/* FORMULÁRIO DE AGENDAMENTO */
+/* ============================= */
+
+form {
+    max-width: 420px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    background: linear-gradient(160deg, var(--dark-light), var(--dark));
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Campos do formulário */
+input,
+select {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #0f0f0f;
+    color: var(--text);
+    font-size: 15px;
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #777;
+}
+
+/* Foco (acessibilidade) */
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(241, 196, 15, 0.3);
+}
+
+/* Botão */
+button {
+    margin-top: 10px;
+    padding: 14px;
+    background: var(--primary);
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(241, 196, 15, 0.4);
+}
+
+/* Mensagem de sucesso */
+#mensagem {
+    text-align: center;
+    margin-top: 15px;
+    color: #2ecc71;
+    font-weight: 500;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    background: linear-gradient(180deg, #000000, #111111);
+    padding: 20px;
+    color: var(--muted);
+    font-size: 14px;
+    border-top: 2px solid var(--primary);
+}
+
+/* ============================= */
+/* PAINEL ADMINISTRATIVO */
+/* ============================= */
+
+.painel {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(160deg, var(--dark-light), var(--dark));
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.painel h2 {
+    margin-bottom: 20px;
+    border-left: 5px solid var(--primary);
+    padding-left: 10px;
+}
+
+/* Lista */
+.lista-agendamentos {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lista-agendamentos li {
+    background: linear-gradient(145deg, #1c1c1c, #151515);
+    padding: 15px 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideIn 0.4s ease forwards;
+}
+
+.lista-agendamentos button {
+    background: #e74c3c;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.lista-agendamentos button:hover {
+    background: #ff6b5a;
+    transform: scale(1.1);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+}
+
+.lista-agendamentos li:only-child {
+    justify-content: center;
+    font-style: italic;
+    color: var(--muted);
+}

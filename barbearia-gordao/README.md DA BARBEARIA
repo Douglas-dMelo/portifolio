@@ -1,0 +1,54 @@
+# 💈 Sistema de Agendamento Online — Barbearia
+
+Sistema web desenvolvido para facilitar o agendamento de serviços
+em uma barbearia, permitindo que clientes escolham serviço, data e horário,
+com confirmação automática via WhatsApp.
+
+---
+
+## 📸 Demonstração
+
+![Agendamento](assets/images/agendamento.png)
+![WhatsApp](assets/images/whatsapp.png)
+
+---
+
+## 🚀 Funcionalidades
+
+- Agendamento de serviços
+- Seleção de data e horário
+- Validação de formulário
+- Envio automático de mensagem para WhatsApp
+- Painel administrativo para visualização dos agendamentos
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+---
+
+## 🎯 Objetivo do projeto
+
+Aplicar na prática os conceitos estudados em JavaScript,
+desenvolvendo um sistema funcional para um cenário real de negócio.
+
+---
+
+## 📈 Melhorias futuras
+
+- Integração com Firebase
+- Autenticação de administrador
+- Filtro por datas
+- Deploy online
+
+---
+
+## 👨‍💻 Autor
+
+Douglas Melo  
+🔗 LinkedIn: https://www.linkedin.com/in/douglas-melo22/  
+🔗 GitHub: https://github.com/Douglas-dMelo
